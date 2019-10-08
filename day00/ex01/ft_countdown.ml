@@ -2,7 +2,7 @@ let rec ft_countdown : int -> unit = fun i ->
                             if i <= 0 then
                                 begin
                                     print_int(0);
-                                    print_char('\n');
+                                    print_char('\n')
                                 end
                             else
                                 begin
