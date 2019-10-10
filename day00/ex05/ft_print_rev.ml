@@ -4,4 +4,4 @@ let ft_print_rev : string -> unit = fun x ->
       done;
       print_char('\n')
 
-let () =  ft_print_rev ("Hello World !")
+let () =  ft_print_rev ("abc")

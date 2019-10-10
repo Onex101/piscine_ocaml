@@ -9,7 +9,7 @@ let ft_is_palindrome : string -> bool = fun x ->
 
   test 0 (len-1)
 
-let () = if (ft_is_palindrome "racecar") then
+let () = if (ft_is_palindrome "Renzo") then
         print_string("true")
         else
         print_string("false")

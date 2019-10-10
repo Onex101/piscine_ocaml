@@ -15,4 +15,4 @@ let rec ft_rot_n : int -> string -> string = fun n s ->
     else
         s
 
-let () = print_string(ft_rot_n 4 "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+let () = print_string(ft_rot_n 4 "abcdefghijkl 123 ! MNOPQRSTUVWXYZ")

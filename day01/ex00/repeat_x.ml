@@ -11,4 +11,4 @@ let repeat_x : int -> string = fun n ->
 
     (concat ret n) ^ "\n"
 
-let () = print_string(repeat_x (-1))
+let () = print_string(repeat_x 9)

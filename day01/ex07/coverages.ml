@@ -6,7 +6,7 @@ let rec coverages f x n =
 	else
 		coverages f (f x) (n - 1)
     
-let () = if (coverages (( * ) 2) 2 5) then
+let () = if (coverages (fun x -> x / 2) 2 3) then
             print_string "true"
         else
             print_string "false"
