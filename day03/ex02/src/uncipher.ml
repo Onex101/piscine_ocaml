@@ -1,4 +1,4 @@
-let rot_one c =
+let reverse_rot_one c =
     if (c < 'a' && c < 'A') || (c > 'Z' && c > 'z') then
         c
     else if c = 'a' || c = 'A' then
@@ -9,7 +9,7 @@ let rot_one c =
 let rec ft_rot_n : int -> string -> string = fun n s ->
     if n > 0 then
         begin
-            let s2 = String.map rot_one s in 
+            let s2 = String.map reverse_rot_one s in 
             ft_rot_n (n - 1) s2
         end
     else
@@ -21,4 +21,8 @@ let uncaeser s n =
 let unrot42 s = 
     ft_rot_n 42 s
 
-let () = print_string(unrot42 "qrstuvwxyzabcdefghijklmnop")
+let rec ft_uncrypt s fs = 
+    match fs with
+    | [] -> s
+    | h::t -> ft_uncrypt (h s) t
+

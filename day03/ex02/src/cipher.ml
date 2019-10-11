@@ -18,9 +18,16 @@ let rec ft_rot_n : int -> string -> string = fun n s ->
 let rot42 s = 
     ft_rot_n 42 s
 
-let caeser s n =
+let caeser : int -> string -> string = fun n s ->
     ft_rot_n n s
 
-let xor s k  = 
+let xor s k = 
+    let encrypt_char c = char_of_int ((int_of_char c) lxor k) in
+    String.map encrypt_char s
 
-let () = print_string(rot42 "abcdefghijklmnopqrstuvwxyz")
+let rec ft_crypt s fs = 
+    match fs with
+    | [] -> s
+    | h::t -> ft_crypt (h s) t
+
+ 
