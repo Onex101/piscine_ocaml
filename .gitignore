@@ -6,7 +6,8 @@ day00/ex03/a.out
 day00/ex03/ft_print_alphabet.cmi
 day00/ex03/ft_print_alphabet.cmx
 day00/ex03/ft_print_alphabet.o
-day00/ex04/a.out
+day00/ex04/a.out+
+
 day00/ex04/ft_print_comb.cmi
 day00/ex04/ft_print_comb.cmx
 day00/ex04/ft_print_comb.o
@@ -148,3 +149,8 @@ day04/ex02/src/main.cmi
 day04/ex02/src/main.cmo
 day04/ex02/src/Value.cmi
 day04/ex02/src/Value.cmo
+day00/ex04/a.out
+rush00/color
+rush00/._d/src/main.d
+rush00/src/main.cmi
+rush00/src/main.cmo
