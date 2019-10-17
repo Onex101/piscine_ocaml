@@ -10,5 +10,5 @@ let eu_dist (a:float array) (b:float array) =
     loop 0. 0
 
     let () =
-        print_float (eu_dist [|1.; 2.; 3.; 4.; 5.;|] [|5.; 4.; 3.; 2.; 1.;|]);
+        print_float (eu_dist [|1.; 2.; 3.; 4.; 5.; 6.; 7.; 8.|] [|8.; 9.; 10.; 1.; 11.;|]);
         ()
