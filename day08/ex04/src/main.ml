@@ -9,14 +9,6 @@ let () =
     let alkane8 = new Alkane.alkane 8 in
     let alkane9 = new Alkane.alkane 9 in
     
-    print_endline (alkane1#to_string) ;
-    print_endline (alkane2#to_string) ;
-    print_endline (alkane3#to_string) ;
-    print_endline (alkane4#to_string) ;
-    print_endline (alkane5#to_string) ;
-    print_endline (alkane6#to_string) ;
-    print_endline (alkane7#to_string) ;
-    print_endline (alkane8#to_string) ;
-    print_endline (alkane9#to_string) ;
-
+    let ac = new Alkane_combustion.alkane_combustion [new Alkane.alkane 9; new Alkane.alkane 2; new Alkane.alkane 5; new Alkane.alkane 2; new Alkane.alkane 2; new Alkane.alkane 9; new Alkane.alkane 5;] in
+    ac#print;
     ()
